@@ -91,7 +91,8 @@ else {
 
 var q5 = prompt ("Do You Know What I'm Interested In !  ").toUpperCase();
 console.log(q5);
-if (q5 == "Y" || q5 == "YES"){
+
+/*if (q5 == "Y" || q5 == "YES"){
     alert (" You Are My Friend Now :D");
 }
 else if ( q5 == "N" || q5 == "NO"){
@@ -105,4 +106,23 @@ else {
 
 var name = prompt (" Now , I need to know your name : ");
 console.log(name);
-alert(name + " Nice Name :D , Welcome :)");
+alert(name + " Nice Name :D , Welcome :)");*/
+
+switch (q5){
+case 'Y' :
+        alert (" You Are My Friend Now :D");
+break;
+
+case 'YES' :
+        alert (" You Are My Friend Now :D");
+        break;
+case 'N' :
+alert  ("Go To Know Who is Raghad ! :D ");
+break;
+case 'NO' :
+        alert  ("Go To Know Who is Raghad ! :D ");
+        break;
+default :
+    prompt(" You Need To Answer Yes/No !");
+break;
+}
