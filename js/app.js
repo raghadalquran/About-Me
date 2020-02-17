@@ -117,10 +117,10 @@ case 'YES' :
         alert (" You Are My Friend Now :D");
         break;
 case 'N' :
-alert  ("Go To Know Who is Raghad ! :D ");
+alert  ("Now Know About Raghad ! :D ");
 break;
 case 'NO' :
-        alert  ("Go To Know Who is Raghad ! :D ");
+        alert  ("Now Know About Raghad ! :D ");
         break;
 default :
     prompt(" You Need To Answer Yes/No !");
