@@ -1,11 +1,11 @@
 
 body {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-    line-height: 18px;
-  padding-left: 40px;
-  background-color: rgb(145, 192, 201);
-  color: #4c4a37; 
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 18px;
+        padding-left: 40px;
+        background-color: rgb(145, 192, 201);
+        color: #4c4a37; 
 }
 
 h1 {
@@ -47,6 +47,11 @@ h1 {
         margin: 5px;
         list-style: circle;
       }
+      ol li  {
+        padding: 5px;
+        margin: 10px;
+        list-style-type: square;
+      }
 
       footer {
           padding: 10px;
@@ -54,12 +59,13 @@ h1 {
           border-color: #bbbbaa #0d5a3a #b89f15 #0d5a3a;}
 
           p { 
-            color: #4c4a37; 
-            font-family: 'Times New Roman', Times, serif;
-             font-size: 18px; line-height: 32px;
-             margin: 0 0 24px;
-             padding: 20px;
-             font-weight: bold;
+          color: #4c4a37; 
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 18px; 
+          line-height: 32px;
+          margin: 0 0 24px;
+          padding: 20px;
+          font-weight: bold;  
              }
 
               /*p {

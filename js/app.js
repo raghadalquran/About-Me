@@ -1,86 +1,158 @@
 
 'use strict'
+    var rightAnswer = 0;
 
-var q1 = prompt ("Do You know Raghad's Birthday Date ? :) ").toUpperCase();
-console.log(q1);
-if (q1 == "Y" || q1 == "YES"){
-    alert ("WaW , So I Will Wait For Your Gifts :D ");
-}
- else if ( q1 == "N" || q1 == "NO"){
-alert ("I will Give You Some of Information About Me :)) ");
-}
-else {
-    prompt(" You Need To Answer Yes/No !");
-}
+var q1 = prompt('I studed Network Engineering ? :) ').toUpperCase();
+//console.log(q1);
+if (q1 == 'Y' || q1 == 'YES') {
+    alert('you know :D');
+     rightAnswer = rightAnswer + 1;
 
-
-var q2 = prompt ("Do You Know What I Studied In The University ? ").toUpperCase();
-console.log(q2);
-if (q2 == "Y" || q2 == "YES"){
-    alert (" BTW Good To Learn About Networking  ");
 }
-else if ( q2 == "N" || q2 == "NO"){
-alert  ("Ready To Know About Me ! :D ");
+else if (q1 == 'N' || q1 == 'NO') {
+    alert('No :/  I\'m a network engineering ');
 }
 else {
-    prompt(" You Need To Answer Yes/No !");
+    prompt('You need to answer Yes/No !');
 }
 
 
-var q3 = prompt ("Do You Know Raghad Skills ? :D ").toUpperCase();
-console.log(q3);
-if (q3 == "Y" || q3 == "YES"){
-    alert  (" Ooh , You Know ! :D ");
-}
-else if ( q3 == "N" || q3 == "NO"){
+var q2 = prompt('I\'m from Amman ? ').toUpperCase();
+//console.log(q2);
+if (q2 == 'Y' || q2 == 'YES') {
+    alert('No , I\'m from Irbid ');
 
-alert  ("Be Ready To Know About Me :D ");
 }
-else {
-    prompt(" You Need To Answer Yes/No !");
-}
+else if (q2 == 'N' || q2 == 'NO') {
+     rightAnswer = rightAnswer + 1;
+    alert('Yes , I\'m from Irbid');
 
-
-var q4 = prompt ("Do You Know If I'm A Sociable Person or Not !  ").toUpperCase();
-console.log(q4);
-if (q4 == "Y" || q4 == "YES"){
-    alert (" Thats Great ! ");
-}
-else if ( q4 == "N" || q4 == "NO"){
-alert  ("Lets Know Some of Information About Me ! :D ");
 }
 else {
-    prompt(" You Need To Answer Yes/No !");
+    prompt(' You need to answer Yes/No !');
 }
 
-var q5 = prompt ("Do You Know What I'm Interested In ?  ").toUpperCase();
-console.log(q5);
+
+var q3 = prompt('Do you think i like programming ?').toUpperCase();
+//console.log(q3);
+if (q3 == 'Y' || q3 == 'YES') {
+    alert(' yes , sure :D ');
+     rightAnswer = rightAnswer + 1;
+
+}
+else if (q3 == 'N' || q3 == 'NO') {
+
+    alert('No , I like programming ');
+}
+else {
+    prompt('You need to answer Yes/No !');
+}
 
 
-switch (q5){
-case 'Y' :
-        alert (" You Are My Friend Now :D");
-break;
+var q4 = prompt('I\'m a sociable person ? ').toUpperCase();
+//console.log(q4);
+if (q4 == 'Y' || q4 == 'YES') {
+    alert('You know me :D');
+     rightAnswer = rightAnswer + 1;
 
-case 'YES' :
-        alert (" You Are My Friend Now :D");
+}
+else if (q4 == 'N' || q4 == 'NO') {
+    alert('why ! :/ ');
+}
+else {
+    prompt('You Need To Answer Yes/No !');
+}
+
+var q5 = prompt(' I\'m interesting in cooking ?  ').toUpperCase();
+//console.log(q5);
+switch (q5) {
+    case 'Y':
+    case 'YES':
+        alert(' I\'m interesting in food not in cooking  :D');
         break;
-case 'N' :
-        alert  ("Now Know About Raghad ! :D ");
+
+    case 'N':
+    case 'NO':
+        alert('I\'m interesting in food not in cooking ! ');
+         rightAnswer = rightAnswer + 1;
         break;
-case 'NO' :
-        alert  ("Now Know About Raghad ! :D ");
+
+    default:
+        prompt('You need to answer Yes/No !');
         break;
-default :
-        prompt(" You Need To Answer Yes/No !");
-break;
 }
 
-var name = prompt (" Now , I need to know your name : ");
-console.log(name);
-alert(name + " Nice Name :D , Welcome :)");
+var yourName = prompt('Now , I need to know your name : ');
+//console.log(yourName);
+alert(yourName + ' Nice Name :D , Welcome :)'); 
 
 
+for (var i = 0; i < 4; i++) {
+    var q6 = prompt('Guess My Lucky Number from (0-10) ');
+    var q6 = Number(q6);
+    // console.log(typeof(q6));
+    if (q6 === 5) {
+         rightAnswer = rightAnswer + 1;
+        break;
+    }
+    else if (q6 === 3 || q6 === 4 || q6 === 6 || q6 === 7) {
+        alert('too high ');
+
+    }
+    else if (q6 === 0 || q6 === 1 || q6 === 2 || q6 === 8 || q6 === 9 || q6 === 10) {
+        alert('too low');
+    }
+    else {
+        alert('Let\'s try again ');
+    }
+
+}
+alert(' 5 is my lucky number ');
+//console.log(q6);
+
+
+    var myFavProg = ['c', 'c++', 'python', 'javascript'];
+    
+for (var j = 0; j <= 5; j++) {
+    var q7 = prompt('Guess which programming language i used it ! :D ').toLowerCase();
+    for (var index = 0; index < myFavProg.length; index++) {
+     if ( q7 === myFavProg[index]){
+       
+       var val = myFavProg;
+        if (q7 === 'c' || q7 === 'c++' || q7 === 'python' || q7 === 'javascript' ) {
+             alert ('correct !');
+             rightAnswer = rightAnswer + 1;
+             breack;
+            } 
+           /* else //if (q7 !== 'c' || q7 !== 'c++' || q7 !== 'python' || q7 !== 'javascript' )
+            {
+                alert('try again');
+            }*/
+
+        }
+    
+    }
+    
+    
+}
+
+
+//console.log(q7);
+alert('the programming language i use it :' + myFavProg);
+alert('your score is ' + rightAnswer + ' out of 7 ');
+
+
+
+
+
+
+
+
+
+
+
+
+//this another code to q5
 /*if (q5 == "Y" || q5 == "YES"){
     alert (" You Are My Friend Now :D");
 }
@@ -92,12 +164,6 @@ alert  ("Go To Know Who is Raghad ! :D ");
 else {
     prompt(" You Need To Answer Yes/No !");
 } */
-
-
-
-
-
-
 
 
 
