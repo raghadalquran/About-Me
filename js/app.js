@@ -132,7 +132,8 @@ alert(yourName + ' Nice Name :D , Welcome :)');
 
 
 function Q6 (q6){
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 6; i++) {
+    
 
     q6 = Number(q6);
     // console.log(typeof(q6));
@@ -141,14 +142,18 @@ function Q6 (q6){
       break;
     }
     else if (q6 === 3 || q6 === 4 || q6 === 6 || q6 === 7) {
-      msg = alert('too high ');
-
+      q6=prompt('Too high , Try again') ; 
+      i++;    
     }
     else if (q6 === 0 || q6 === 1 || q6 === 2 || q6 === 8 || q6 === 9 || q6 === 10) {
-      msg = alert('too low');
+      q6=prompt('Too low , Try again') ; 
+      i++;
     }
     else {
-      msg = alert('Let\'s try again ');
+     
+     // msg = alert('Let\'s try again ');
+      msg = prompt('Guess My Lucky Number from (0-10) ');
+
     }
 
   }
@@ -158,7 +163,6 @@ function Q6 (q6){
 
   return msg ;
 }
-
 var q6 = prompt('Guess My Lucky Number from (0-10) ');
 Q6(q6);
 
@@ -166,31 +170,36 @@ function Q7 (q7){
 
   for (var j = 0; j <= 5; j++) {
 
-    for (var index = 0; index < myFavProg.length; index++) {
-      if ( q7 === myFavProg[index]){
 
-        var val = myFavProg;
+    for (var index = 0; index < myFavProg.length; index++) {
+     // if ( q7 === myFavProg[index]){
+
         if (q7 === 'c' || q7 === 'c++' || q7 === 'python' || q7 === 'javascript' ) {
           msg = alert ('correct !');
           rightAnswer = rightAnswer + 1;
           index = myFavProg.length;
-          j = 6;
-        }
+          j = 6;}
+        //}
 
-        /* else //if (q7 !== 'c' || q7 !== 'c++' || q7 !== 'python' || q7 !== 'javascript' )
-            {
-                alert('try again');
-            }*/
-
-      }
-
-    }
-
-
+        else if(j==6){
+        break;}
+        else{
+        q7=prompt('try again');
+        j++;
+      } 
+      
   }
-
-  return msg;
+  
+  }
+  return msg; 
 }
+
+
+
+
+
+ 
+
 
 var q7 = prompt('Guess which programming language i used it ! :D ').toLowerCase();
 Q7(q7);
