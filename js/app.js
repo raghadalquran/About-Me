@@ -13,12 +13,12 @@ function Q1 (q1){
 
   //console.log(q1);
   if (q1 === 'Y' || q1 === 'YES') {
-    msg = alert('you know :D');
+    msg = alert('you know!');
     rightAnswer = rightAnswer + 1;
 
   }
   else if (q1 === 'N' || q1 === 'NO') {
-    msg = alert('No :/  I\'m a network engineering ');
+    msg = alert('No :/  I\'m a Network Engineering ');
   }
   else {
     msg = prompt('You need to answer Yes/No !');
@@ -26,7 +26,7 @@ function Q1 (q1){
 
   return msg;
 }
-var q1 = prompt('I studed Network Engineering ? :) ').toUpperCase();
+var q1 = prompt('I have a bachelor degree in Network Engineering & security ? ').toUpperCase();
 Q1(q1);
 
 function Q2 (q2){
@@ -38,7 +38,7 @@ function Q2 (q2){
   }
   else if (q2 === 'N' || q2 === 'NO') {
     rightAnswer = rightAnswer + 1;
-    msg = alert('Yes , I\'m from Irbid');
+    msg = alert('Good , You know me.');
 
   }
   else {
@@ -54,7 +54,7 @@ function Q3 (q3){
 
   //console.log(q3);
   if (q3 === 'Y' || q3 === 'YES') {
-    msg = alert(' yes , sure :D ');
+    msg = alert(' Yes , sure :D ');
     rightAnswer = rightAnswer + 1;
 
   }
@@ -76,7 +76,7 @@ function Q4 (q4){
 
   //console.log(q4);
   if (q4 === 'Y' || q4 === 'YES') {
-    msg = alert('You know me :D');
+    msg = alert('Hope you are too :D');
     rightAnswer = rightAnswer + 1;
 
   }
@@ -201,14 +201,14 @@ function Q7 (q7){
  
 
 
-var q7 = prompt('Guess which programming language i used it ! :D ').toLowerCase();
+var q7 = prompt('Guess the programming languages i used it before ! :D ').toLowerCase();
 Q7(q7);
 
 
 
 //console.log(q7);
-alert('the programming language i use it :' + myFavProg);
-alert('your score is ' + rightAnswer + ' out of 7 ');
+alert('The programming language i use it :' + myFavProg);
+alert('your score is ' + rightAnswer + ' / 7 ');
 
 
 
@@ -269,6 +269,7 @@ if (q4 == "Y" || q4 == "YES"){
 }
 else {
 alert  (" Ooh .. ! ")
-}*/
+}
 
 
+*/
